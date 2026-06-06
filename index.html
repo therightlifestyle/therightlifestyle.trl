@@ -3,112 +3,179 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TRL | AI Lead Automation Systems</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<title>TRL | AI Lead Automation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
 <style>
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Sora', sans-serif;
 }
 
 body {
-    background: #0f172a;
-    color: #ffffff;
-    line-height: 1.7;
+  background: linear-gradient(135deg, #0a0f1f, #0f1c3d);
+  color: #ffffff;
+  overflow-x: hidden;
 }
 
 header {
-    padding: 20px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(15,23,42,0.95);
-    position: sticky;
-    top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  position: fixed;
+  width: 100%;
+  background: rgba(10,15,31,0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
 }
 
 header h1 {
-    color: #3b82f6;
-    font-weight: 800;
+  font-weight: 800;
+  font-size: 22px;
+  background: linear-gradient(to right, #3b82f6, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin-left: 25px;
-    font-weight: 500;
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 30px;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
-section {
-    padding: 100px 8%;
+nav a:hover {
+  color: #3b82f6;
 }
 
 .hero {
-    text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 10%;
 }
 
 .hero h2 {
-    font-size: 48px;
-    font-weight: 800;
-    margin-bottom: 20px;
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  animation: fadeUp 1.2s ease;
+}
+
+.hero span {
+  background: linear-gradient(to right, #3b82f6, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero p {
-    font-size: 20px;
-    color: #cbd5e1;
-    max-width: 750px;
-    margin: 0 auto 40px;
+  font-size: 20px;
+  color: #cbd5e1;
+  max-width: 700px;
+  margin-bottom: 40px;
+  animation: fadeUp 1.8s ease;
 }
 
 .button {
-    background: #3b82f6;
-    padding: 16px 32px;
-    border-radius: 8px;
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600;
-    transition: 0.3s;
+  padding: 16px 32px;
+  border-radius: 50px;
+  background: linear-gradient(to right, #2563eb, #3b82f6);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+  box-shadow: 0 0 20px rgba(59,130,246,0.5);
+  animation: fadeUp 2.2s ease;
 }
 
 .button:hover {
-    background: #2563eb;
+  transform: translateY(-3px);
+  box-shadow: 0 0 30px rgba(59,130,246,0.8);
+}
+
+section {
+  padding: 120px 10%;
 }
 
 .section-title {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 30px;
-    color: #3b82f6;
+  font-size: 38px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 700;
 }
 
 .card {
-    background: #1e293b;
-    padding: 30px;
-    border-radius: 12px;
-    margin-bottom: 25px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 35px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  transition: 0.3s;
 }
 
-ul {
-    padding-left: 20px;
+.card:hover {
+  transform: translateY(-8px);
+  border-color: #3b82f6;
 }
 
-.process-step {
-    margin-bottom: 20px;
+.card h4 {
+  margin-bottom: 15px;
+  color: #60a5fa;
+}
+
+.card p {
+  color: #cbd5e1;
+}
+
+.contact-box {
+  text-align: center;
+}
+
+.contact-box p {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.contact-box a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
 }
 
 footer {
-    text-align: center;
-    padding: 40px;
-    background: #0f172a;
-    color: #94a3b8;
+  text-align: center;
+  padding: 40px;
+  color: #94a3b8;
+  font-size: 14px;
 }
 
-.highlight {
-    color: #3b82f6;
-    font-weight: 600;
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media(max-width:768px){
+  .hero h2{
+    font-size:36px;
+  }
 }
 
 </style>
@@ -117,117 +184,78 @@ footer {
 <body>
 
 <header>
-    <h1>TRL</h1>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#process">Process</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <h1>TRL</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <section class="hero">
-    <h2>AI Lead Automation Systems</h2>
-    <p>
-        Helping creators and online businesses stop losing leads, eliminate manual chaos, 
-        and scale with intelligent automation.
-    </p>
-    <a href="#contact" class="button">Book Free AI Audit</a>
+  <h2>AI Lead Automation <span>Systems</span></h2>
+  <p>
+    We build intelligent automation that captures, qualifies, and organizes your leads —
+    so you stop losing clients and start scaling with structure.
+  </p>
+  <a href="https://wa.me/923190091457?text=Hi%20TRL%2C%20I%20want%20my%20Free%20AI%20Audit" target="_blank" class="button">Book Free AI Audit</a>
 </section>
 
 <section id="about">
-    <h3 class="section-title">About TRL</h3>
-    <div class="card">
-        <p>
-        TRL (The Right Lifestyle) was built from a simple realization:
-        ambitious people don’t fail because they lack vision — 
-        they fail because they lack systems.
-        </p>
-        <br>
-        <p>
-        We specialize in building <span class="highlight">AI-powered lead automation systems</span> 
-        that capture, qualify, organize, and follow up with potential clients automatically.
-        </p>
-        <br>
-        <p>
-        Our mission is simple:
-        <strong>Automate the routine. Accelerate your legacy.</strong>
-        </p>
-    </div>
+  <h3 class="section-title">About TRL</h3>
+  <div class="card">
+    <p>
+      TRL (The Right Lifestyle) was built from a simple realization:
+      ambitious people don’t fail because they lack vision — 
+      they fail because they lack systems.
+    </p>
+    <br>
+    <p>
+      We specialize in building AI-powered lead automation systems
+      that capture, qualify, organize, and follow up with potential clients automatically.
+    </p>
+    <br>
+    <p>
+      Our mission is simple:
+      <strong>Automate the routine. Accelerate your legacy.</strong>
+    </p>
+  </div>
 </section>
 
 <section id="services">
-    <h3 class="section-title">Core Services</h3>
+  <h3 class="section-title">Core Automation Services</h3>
 
-    <div class="card">
-        <h4>AI Lead Capture & Qualification</h4>
-        <p>
-        Automatic DM responses, structured qualification questions, 
-        intelligent tagging, and booking integration.
-        </p>
-    </div>
+  <div class="card">
+    <h4>AI Lead Capture & Qualification</h4>
+    <p>Instant DM responses, smart qualification questions, automatic booking integration.</p>
+  </div>
 
-    <div class="card">
-        <h4>CRM & Pipeline Automation</h4>
-        <p>
-        Every lead is organized, tracked, and scored inside a 
-        structured system — no more messy inboxes.
-        </p>
-    </div>
+  <div class="card">
+    <h4>CRM & Pipeline Automation</h4>
+    <p>Structured lead tracking systems that organize, tag, and score prospects automatically.</p>
+  </div>
 
-    <div class="card">
-        <h4>Automated Follow-Up Systems</h4>
-        <p>
-        Smart reminders and follow-ups ensure you never lose revenue 
-        due to slow responses.
-        </p>
-    </div>
-
-</section>
-
-<section id="process">
-    <h3 class="section-title">How It Works</h3>
-
-    <div class="card process-step">
-        <strong>Step 1 – Audit</strong>
-        <p>We analyze your current lead flow and identify lost opportunities.</p>
-    </div>
-
-    <div class="card process-step">
-        <strong>Step 2 – System Design</strong>
-        <p>We build a custom AI workflow tailored to your business model.</p>
-    </div>
-
-    <div class="card process-step">
-        <strong>Step 3 – Automation Setup</strong>
-        <p>DM automation, CRM integration, lead scoring, follow-ups.</p>
-    </div>
-
-    <div class="card process-step">
-        <strong>Step 4 – Scale</strong>
-        <p>Your system runs 24/7 while you focus on growth.</p>
-    </div>
+  <div class="card">
+    <h4>Automated Follow-Up Systems</h4>
+    <p>Smart reminders and sequences ensuring no revenue opportunity is ever missed.</p>
+  </div>
 
 </section>
 
 <section id="contact">
-    <h3 class="section-title">Contact TRL</h3>
+  <h3 class="section-title">Contact TRL</h3>
 
-    <div class="card">
-        <p><strong>Email:</strong> rashidmuhammadamir@email.com</p>
-        <p><strong>Phone / WhatsApp:</strong> +923190091457</p>
-        <p><strong>Instagram:</strong> https://www.instagram.com/the.right.lifestyle/</p>
-        <br>
-        <p>
-        Ready to build your automation system?
-        </p>
-        <br>
-        <a href="rashidmuhammadamir@email.com" class="button">Schedule Appointment</a>
-    </div>
+  <div class="card contact-box">
+    <p><strong>Email:</strong> <a href="mailto:rashidmuhammadamir@gmail.com">rashidmuhammadamir@gmail.com</a></p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/923190091457" target="_blank">+92 319 0091457</a></p>
+    <p><strong>Instagram:</strong> <a href="https://www.instagram.com/the.right.lifestyle/" target="_blank">@the.right.lifestyle</a></p>
+    <br>
+    <a href="https://wa.me/923190091457?text=Hi%20TRL%2C%20I%20want%20to%20schedule%20an%20appointment" target="_blank" class="button">Schedule Appointment</a>
+  </div>
 </section>
 
 <footer>
-    © 2026 TRL – The Right Lifestyle | AI Lead Automation Systems
+  © 2026 TRL – The Right Lifestyle | Automate the Routine. Accelerate your Legacy.
 </footer>
 
 </body>
