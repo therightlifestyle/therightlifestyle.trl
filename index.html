@@ -4,8 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TRL | AI Lead Automation Systems</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 <style>
+
 * {
     margin: 0;
     padding: 0;
@@ -14,82 +15,102 @@
 }
 
 body {
-    background-color: #0f0f14;
+    background: #0f172a;
     color: #ffffff;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 header {
-    padding: 20px 10%;
+    padding: 20px 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #111827;
+    background: rgba(15,23,42,0.95);
     position: sticky;
     top: 0;
 }
 
 header h1 {
-    font-size: 22px;
     color: #3b82f6;
+    font-weight: 800;
 }
 
 nav a {
     color: #ffffff;
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 25px;
     font-weight: 500;
 }
 
+section {
+    padding: 100px 8%;
+}
+
 .hero {
-    padding: 100px 10%;
     text-align: center;
 }
 
 .hero h2 {
-    font-size: 40px;
+    font-size: 48px;
+    font-weight: 800;
     margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 20px;
     color: #cbd5e1;
-    margin-bottom: 30px;
+    max-width: 750px;
+    margin: 0 auto 40px;
 }
 
 .button {
     background: #3b82f6;
-    padding: 15px 30px;
+    padding: 16px 32px;
     border-radius: 8px;
-    color: #fff;
     text-decoration: none;
+    color: #fff;
     font-weight: 600;
+    transition: 0.3s;
 }
 
-.section {
-    padding: 80px 10%;
+.button:hover {
+    background: #2563eb;
 }
 
-.section h3 {
-    font-size: 30px;
-    margin-bottom: 20px;
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
     color: #3b82f6;
 }
 
 .card {
-    background: #1f2937;
-    padding: 25px;
-    border-radius: 10px;
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.process-step {
     margin-bottom: 20px;
 }
 
 footer {
-    background: #111827;
     text-align: center;
-    padding: 30px;
-    font-size: 14px;
+    padding: 40px;
+    background: #0f172a;
     color: #94a3b8;
 }
+
+.highlight {
+    color: #3b82f6;
+    font-weight: 600;
+}
+
 </style>
 </head>
 
@@ -100,72 +121,106 @@ footer {
     <nav>
         <a href="#about">About</a>
         <a href="#services">Services</a>
+        <a href="#process">Process</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
 
 <section class="hero">
-    <h2>AI Lead Automation Systems for Creators & Online Businesses</h2>
-    <p>I build AI systems that automatically capture, qualify, and organize your leads — so you stop losing clients and start scaling intelligently.</p>
-    <a href="#contact" class="button">Book a Free AI Audit</a>
+    <h2>AI Lead Automation Systems</h2>
+    <p>
+        Helping creators and online businesses stop losing leads, eliminate manual chaos, 
+        and scale with intelligent automation.
+    </p>
+    <a href="#contact" class="button">Book Free AI Audit</a>
 </section>
 
-<section id="about" class="section">
-    <h3>About TRL</h3>
+<section id="about">
+    <h3 class="section-title">About TRL</h3>
     <div class="card">
         <p>
-        TRL (The Right Lifestyle) is a modern AI systems brand focused on helping ambitious creators and online businesses eliminate manual chaos.
+        TRL (The Right Lifestyle) was built from a simple realization:
+        ambitious people don’t fail because they lack vision — 
+        they fail because they lack systems.
         </p>
         <br>
         <p>
-        We specialize in building structured AI lead automation systems that:
+        We specialize in building <span class="highlight">AI-powered lead automation systems</span> 
+        that capture, qualify, organize, and follow up with potential clients automatically.
         </p>
-        <ul>
-            <li>✔ Instantly respond to incoming messages</li>
-            <li>✔ Qualify serious buyers automatically</li>
-            <li>✔ Organize leads inside CRM systems</li>
-            <li>✔ Trigger follow-ups without manual effort</li>
-        </ul>
         <br>
         <p>
-        Automate the routine. Accelerate your legacy.
+        Our mission is simple:
+        <strong>Automate the routine. Accelerate your legacy.</strong>
         </p>
     </div>
 </section>
 
-<section id="services" class="section">
-    <h3>Core Services</h3>
+<section id="services">
+    <h3 class="section-title">Core Services</h3>
 
     <div class="card">
-        <h4>AI Lead Capture & Qualification System</h4>
+        <h4>AI Lead Capture & Qualification</h4>
         <p>
-        Automatically respond to DMs, ask structured questions, qualify leads, and send serious prospects directly to your booking calendar.
+        Automatic DM responses, structured qualification questions, 
+        intelligent tagging, and booking integration.
         </p>
     </div>
 
     <div class="card">
         <h4>CRM & Pipeline Automation</h4>
         <p>
-        Organize every lead into a structured system with automatic tagging, scoring, and tracking.
+        Every lead is organized, tracked, and scored inside a 
+        structured system — no more messy inboxes.
         </p>
     </div>
 
     <div class="card">
-        <h4>Follow-Up Automation</h4>
+        <h4>Automated Follow-Up Systems</h4>
         <p>
-        Never lose a potential client again with automated reminders and intelligent follow-up workflows.
+        Smart reminders and follow-ups ensure you never lose revenue 
+        due to slow responses.
         </p>
     </div>
+
 </section>
 
-<section id="contact" class="section">
-    <h3>Contact TRL</h3>
+<section id="process">
+    <h3 class="section-title">How It Works</h3>
+
+    <div class="card process-step">
+        <strong>Step 1 – Audit</strong>
+        <p>We analyze your current lead flow and identify lost opportunities.</p>
+    </div>
+
+    <div class="card process-step">
+        <strong>Step 2 – System Design</strong>
+        <p>We build a custom AI workflow tailored to your business model.</p>
+    </div>
+
+    <div class="card process-step">
+        <strong>Step 3 – Automation Setup</strong>
+        <p>DM automation, CRM integration, lead scoring, follow-ups.</p>
+    </div>
+
+    <div class="card process-step">
+        <strong>Step 4 – Scale</strong>
+        <p>Your system runs 24/7 while you focus on growth.</p>
+    </div>
+
+</section>
+
+<section id="contact">
+    <h3 class="section-title">Contact TRL</h3>
+
     <div class="card">
         <p><strong>Email:</strong> rashidmuhammadamir@email.com</p>
-        <p><strong>Phone / WhatsApp:</strong> +92 3190091457</p>
+        <p><strong>Phone / WhatsApp:</strong> +923190091457</p>
         <p><strong>Instagram:</strong> https://www.instagram.com/the.right.lifestyle/</p>
         <br>
-        <p>Ready to automate your business?</p>
+        <p>
+        Ready to build your automation system?
+        </p>
         <br>
         <a href="rashidmuhammadamir@email.com" class="button">Schedule Appointment</a>
     </div>
